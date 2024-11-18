@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "Micromouse Competition",
+        "description": "A brief overview of the first project.",
+        "skill": "Skills: Electronics, Raspberry Pi Coding",
+        "objectives": "Create a small autonomous robot that will be able to traverse a maze in the quickest possible route",
+        "image": "./assets/project1.jpg",
+        "link": "/project-details/1"
+    },
+    {
+        "id": 2,
+        "title": "VexBot team",
+        "description": "A brief overview of the second project.",
+        "skill": "Building with small hand tools",
+        "objectives": "Learn the basics of building and coding robots through creating claw arm robots that can perform basic tasks",
+        "image": "./assets/project2.jpg",
+        "link": "/project-details/2"
+    },
+    {
+        "id": 3,
+        "title": "Tunnel Robot Build Team",
+        "description": "A brief overview of the third project.",
+        "skill": "Laser cutting",
+        "objectives":"Work alongside the Wake Forest Department of Health and Safety and Department of Engineering to create a remote controlled robot that can traverse rough terrain to assist in safety evaluation of tunnels underneath the Wake Forest Reynolda Campus.",
+        "image": "./assets/project3.jpg",
+        "link": "/project-details/3"
+    }
+]
