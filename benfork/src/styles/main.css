@@ -1,0 +1,185 @@
+/* Typography
+----------------------------------------*/
+/* Fonts and text styles */
+:root {
+  --link-color: #000;
+}
+
+.announcement-header {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.25rem;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+p, .mailto {
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mailto { 
+  color: var(--link-color);
+}
+
+.light {
+  font-family: Poppins;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+h2 {
+  color: #E5E1E0;
+  font-family: "JetBrains Mono";
+  font-size: 3.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  display: inline-block;
+  width: auto;
+  z-index: 1;
+  text-wrap: nowrap;
+}
+
+/* Layout Components
+----------------------------------------*/
+/* Announcement Section */
+.announcement-container {
+  display: flex;
+  width: 75vw;
+  padding: 2.75rem 3.375rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0em;
+  border-radius: 0.1875rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+}
+
+#all-announcements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Team Section */
+#team-section {
+  display: flex;
+  justify-content: center;
+  min-height: 70vw;
+  background: linear-gradient(119deg, rgba(65, 73, 77, 0.50) 6.01%, rgba(40, 49, 53, 0.50) 90.55%), #1C1817;
+  flex-direction: column;
+  padding: 0rem 10vw;
+  gap: 9.75rem;
+  color: #E5E1E0;
+}
+
+#team-members {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 4rem;
+  align-self: stretch;
+  flex-wrap: wrap;
+  max-width: 80vw;
+}
+
+.person {
+  display: flex;
+  height: 26.1875rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.person > p, h3 {
+  opacity: .75;
+}
+
+/* Footer Section */
+#footer {
+  display: flex;
+  padding: 1.5rem 1.875rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.25rem;
+}
+
+#footer > p {
+  text-align: center;
+}
+
+#footer > #contact {
+  display: flex;
+  align-self: stretch;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+#email {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.42188rem;
+}
+
+/* Decorative Elements
+----------------------------------------*/
+h2::before {
+  content: "";
+  position: absolute;
+  left: .25em;
+  top: .6em;
+  width: 4.5em;
+  height: 50%;
+  background: var(--Gradient, linear-gradient(90deg, rgba(187, 155, 79, 0.50) 0%, rgba(85, 70, 36, 0.40) 100%));
+  z-index: -1;
+}
+
+/* General Layout
+----------------------------------------*/
+#body > :not(#team-section) {
+  padding: 20px;
+}
+
+/* Media Queries
+----------------------------------------*/
+@media (min-width: 1000px) {
+  #contact > :not(#icons) {
+    min-width: 16em;
+  }
+}
+
+@media (min-width: 800px) {
+  #footer > #contact {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 600px) {
+  .announcement-container {
+    padding: 2rem 2rem;
+  }
+
+  #body > :not(#team-section) {
+    padding: 5vw;
+  }
+
+  h1, h2, h3, p, .mailto, .announcement-header {
+    font-size: 80%;
+  }
+}
