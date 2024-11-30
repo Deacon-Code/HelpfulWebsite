@@ -6,9 +6,10 @@ const ProjectCard = ({ image, title, description, skill, objectives }) => {
             <img src={image} alt={title} style={styles.image} />
             <div style={styles.content}>
                 <h2 style={styles.title}>{title}</h2>
-                <p style={styles.description}><strong>Description:</strong> {description}</p>
-                <p style={styles.description}><strong>Skill:</strong> {skill}</p>
-                <p style={styles.description}><strong>Objectives:</strong> {objectives}</p>
+                <p style={styles.description}><h3>Team Objectives:</h3> {objectives}</p>
+                <p style={styles.description}><h3>Current Work:</h3> {description}</p>
+                <p style={styles.description}><h3>Skills learned in this project:</h3> {skill}</p>
+
             </div>
         </div>
     );
@@ -17,23 +18,23 @@ const ProjectCard = ({ image, title, description, skill, objectives }) => {
 // Inline styles for the ProjectCard
 const styles = {
     card: {
-        width: '300px',
+        width: '25%', // Card width adapts to the grid cell
         border: '1px solid #ddd',
-        borderRadius: '8px',
+        borderRadius: '20px',
         overflow: 'hidden',
-        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+        boxShadow: '0 8px 16px rgba(0, 0, 0, 0.2)', // Lighter, wider shadow
         transition: 'transform 0.3s ease',
         backgroundColor: '#FFF',
-        cursor: 'pointer',
-        textAlign: 'left', // Align text to the left for better readability
+        textAlign: 'left',
+        padding: '1%',
     },
     image: {
         width: '100%',
-        height: '180px',
+        height: '200px', // Adjust height for better proportions
         objectFit: 'cover',
     },
     content: {
-        padding: '16px',
+        padding: '10px',
     },
     title: {
         fontSize: '1.5em',
@@ -47,5 +48,6 @@ const styles = {
         lineHeight: '1.5',
     },
 };
+
 
 export default ProjectCard;
