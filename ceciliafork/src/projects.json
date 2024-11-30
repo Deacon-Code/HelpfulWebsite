@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "title": "Micromouse Competition",
+        "objectives": "Create a small autonomous robot that will be able to traverse a maze in the quickest possible route",
+        "description": "The Micromouse Competition team is currently starting work with the electronics of the robot. They are working to program the Raspberry Pis that will be used to control the robot and are wiring the various electronic components.",
+        "skill": "Skills: Electronics, Raspberry Pi Coding",
+        "image": "project1.jpg",
+        "link": "/project-details/1"
+    },
+    {
+        "id": 2,
+        "title": "VexBot team",
+        "objectives": "Learn the basics of building and coding robots through creating claw arm robots that can perform basic tasks",
+        "description": "The VexBot team has previously learned how to use Raspberry Pis to make a robot move its wheels or robotic arm. They are now working to build their own robots from VexRobotics kits with the help of the WFU Waker Space.",
+        "skill": "Building with small hand tools",
+        "image": "project2.jpg",
+        "link": "/project-details/2"
+    },
+    {
+        "id": 3,
+        "title": "Tunnel Robot Build Team",
+        "objectives":"Work alongside the Wake Forest Department of Health and Safety and Department of Engineering to create a remote controlled robot that can traverse rough terrain to assist in safety evaluation of tunnels underneath the Wake Forest Reynolda Campus.",
+        "description": "The Tunnel Robot Build Team has created a prototype of the robot, sourced materials that will be used for construction, and is beginning to construct the motor system.The Tunnel Robot Programming Team is working to implement IR sensors and cameras that can be mounted to the robot to display a live video feed to inspectors outside of the tunnel.",
+        "skill": "Laser cutting",
+        "image": "project3.jpg",
+        "link": "/project-details/3"
+    },
+    {
+        "id": 4,
+        "title": "Potential New Project",
+        "objectives":"Fill in the objectives here",
+        "description": "Fill in the current work here",
+        "skill": "New Skills",
+        "image": "project4.jpg",
+        "link": "/project-details/4"
+    },
+    {
+        "id": 5,
+        "title": "Potential New Project",
+        "objectives":"Fill in the objectives here",
+        "description": "Fill in the current work here",
+        "skill": "New Skills",
+        "image": "project4.jpg",
+        "link": "/project-details/4"
+    },
+    {
+        "id": 6,
+        "title": "Potential New Project",
+        "objectives":"Fill in the objectives here",
+        "description": "Fill in the current work here",
+        "skill": "Fill in skills here",
+        "image": "project4.jpg",
+        "link": "/project-details/4"
+    }
+]
