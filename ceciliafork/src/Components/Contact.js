@@ -39,7 +39,7 @@ const styles = {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: '40px',
+        padding: '80px',
         border: '2px solid #FFC72C', // Wake Forest gold border
         borderRadius: '8px',
         backgroundColor: '#fff', // White background

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Contact from './Components/Contact';
 import ProjectCard from './Components/ProjectCard';
 import projects from './projects.json';
+import Calendar from './Components/Calendar'; // Case-sensitive
 
 // Component to display a list of projects
 const ProjectList = () => {
@@ -26,6 +27,7 @@ const ProjectList = () => {
 const App = () => (
     <>
         <ProjectList />
+        <Calendar />
         <Contact />
     </>
 );

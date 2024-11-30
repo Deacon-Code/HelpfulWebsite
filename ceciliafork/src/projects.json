@@ -4,7 +4,7 @@
         "title": "Micromouse Competition",
         "objectives": "Create a small autonomous robot that will be able to traverse a maze in the quickest possible route",
         "description": "The Micromouse Competition team is currently starting work with the electronics of the robot. They are working to program the Raspberry Pis that will be used to control the robot and are wiring the various electronic components.",
-        "skill": "Skills: Electronics, Raspberry Pi Coding",
+        "skill": "Electronics, Raspberry Pi Coding",
         "image": "project1.jpg",
         "link": "/project-details/1"
     },
