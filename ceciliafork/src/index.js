@@ -4,7 +4,10 @@ import Contact from './Components/Contact';
 import ProjectCard from './Components/ProjectCard';
 import projects from './projects.json';
 import Calendar from './Components/Calendar'; // Case-sensitive
-
+import Home from './Components/Home';
+import Announcements from './Components/Announcements';
+import Team from './Components/Team';
+import Footer from './Components/Footer';
 // Component to display a list of projects
 const ProjectList = () => {
     return (
@@ -25,11 +28,27 @@ const ProjectList = () => {
 
 // Main App Component
 const App = () => (
-    <>
+    // <div style={{ backgroundColor: 'grey' }}>
+    <div>
+    <Home />
+        <h2>Projects</h2>
         <ProjectList />
+        <h2>Calendar</h2>
         <Calendar />
+        <h2>Contact</h2>
         <Contact />
-    </>
+        <h2>Announcements</h2>
+        <div style={{ marginTop: '20px' }}>
+            <Announcements />
+        </div>
+        <div id='team-section' style={{ marginTop: '20px' }}>
+            <h2>Our Team</h2>
+            <Team />
+        </div>
+        <div style={{ marginTop: '20px' }}>
+            <Footer />
+        </div>
+    </div>
 );
 
 // Render the App
