@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-// import './App.css';
+import wfu_logo from '../assets/wfu_logo.png';
+import circuit_board from '../assets/circuit_board.jpg';
+import '../App.css';
 
 function HomePage() {
-  const [activeTab, setActiveTab] = useState('about'); 
-  const [showEmailInput, setShowEmailInput] = useState(false); 
+  const [activeTab, setActiveTab] = useState('about');
+  const [showEmailInput, setShowEmailInput] = useState(false);
   const [buttonName, setButtonName] = useState('Get email updates');
 
   const handleTabClick = (tab) => {
@@ -12,20 +14,22 @@ function HomePage() {
 
   const handleEmailButtonClick = () => {
     setShowEmailInput(!showEmailInput);
-    if(showEmailInput) {
+    if (showEmailInput) {
       setButtonName("Get email updates");
-    } 
+    }
     else {
       setButtonName("Sign Up");
     }
-    
+
   };
 
   return (
     <div style={styles.container}>
       <header style={styles.header}>
         <a href="https://www.wfu.edu/" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/wfu_logo.png" alt="Wake Forest University" style={styles.logo} />
+          {/* <img src="/assets/wfu_logo.png" alt="Wake Forest University" style={styles.logo} /> */}
+          <img src={wfu_logo} alt="Wake Forest University" style={styles.logo} />
+
         </a>
         <nav style={styles.nav}>
           {['about', 'projects', 'tutorials', 'news'].map((tab) => (
@@ -43,7 +47,8 @@ function HomePage() {
 
       <main style={styles.main}>
         <div style={styles.imageContainer}>
-          <img src="/assets/circuit_board.jpg" alt="Circuit board" style={styles.image} />
+          {/* <img src="/assets/circuit_board.jpg" alt="Circuit board" style={styles.image} /> */}
+          <img src={circuit_board} alt="Circuit board" style={styles.image} />
         </div>
 
         <div style={styles.textContainer}>
@@ -70,7 +75,7 @@ function HomePage() {
               <button style={styles.joinButton}>Join us Mondays at 6pm in Manchester</button>
             )}
             <button style={styles.updateButton} onClick={handleEmailButtonClick}>
-              { buttonName }
+              {buttonName}
             </button>
           </div>
         </div>
@@ -89,7 +94,7 @@ function HomePage() {
 
 const styles = {
   container: {
-    fontFamily: 'JetBrainsMono-Light, Arial, sans-serif', 
+    fontFamily: 'JetBrainsMono-Light, Arial, sans-serif',
     color: '#333',
     padding: '15px',
     width: '90%',
@@ -116,21 +121,21 @@ const styles = {
     fontSize: '16px'
   },
   activeNavLink: {
-  fontWeight: 'bold',
-  fontSize: '16px',
-  background: 'linear-gradient(to right, #91742b, grey)',
-  WebkitBackgroundClip: 'text',
-  WebkitTextFillColor: 'transparent',
-  position: 'relative', 
-},
+    fontWeight: 'bold',
+    fontSize: '16px',
+    background: 'linear-gradient(to right, #91742b, grey)',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    position: 'relative',
+  },
   activeNavLinkAfter: {
     content: '""',
     position: 'absolute',
-    bottom: '-2px', 
+    bottom: '-2px',
     left: 0,
     width: '100%',
-    height: '2px', 
-    background: 'linear-gradient(to right, #91742b, grey)', 
+    height: '2px',
+    background: 'linear-gradient(to right, #91742b, grey)',
   },
   main: {
     display: 'flex',
@@ -155,24 +160,24 @@ const styles = {
     fontWeight: '625px',
     lineHeight: '1.6',
     fontFamily: 'JetBrainsMono-Bold, sans-serif',
-    marginBottom: '60px'  
+    marginBottom: '60px'
   },
   highlight: {
-    position: 'relative', 
-    display: 'inline-block', 
-    zIndex: 1, 
+    position: 'relative',
+    display: 'inline-block',
+    zIndex: 1,
     backgroundColor: 'transparent',
   },
   highlightAfter: {
     content: '""',
     position: 'absolute',
-    bottom: '-4px', 
-    right: '-13px', 
-    width: '100%', 
-    height: '45px', 
-    zIndex: -1, 
+    bottom: '-4px',
+    right: '-13px',
+    width: '100%',
+    height: '45px',
+    zIndex: -1,
     opacity: 0.5,
-    background: 'linear-gradient(to right, #91742b, grey)', 
+    background: 'linear-gradient(to right, #91742b, grey)',
   },
   description: {
     fontSize: '16px',

@@ -1,7 +1,13 @@
 [
   {
-    "name": "Andrew Glenn",
+    "name": "Tucker Corwen",
     "role": "President",
+    "email": "corwth21@wfu.edu",
+    "image": "/TuckerCorwen.png"
+  },
+  {
+    "name": "Andrew Glenn",
+    "role": " Previous President",
     "email": "glenae20@wfu.edu",
     "image": "/AndrewGlenn.png"
   },
@@ -10,11 +16,5 @@
     "role": "Faculty Advisor",
     "email": "ps@wfu.edu",
     "image": "/PeteSantago.png"
-  },
-  {
-    "name": "Andrew Glenn",
-    "role": "President",
-    "email": "glenae20@wfu.edu",
-    "image": "/AndrewGlenn.png"
   }
 ]

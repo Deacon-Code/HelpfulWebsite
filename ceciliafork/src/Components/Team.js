@@ -35,7 +35,7 @@ const Team = () => {
                     <img
                         src={person.image}
                         alt={person.name}
-                        style={{ width: '300px', height: '300px' }}
+                        style={{ width: '300px', height: '300px', filter: 'grayscale(100%)'}}
                     />
                     <h3>{person.name}</h3>
                     <p className="light">{person.role}</p>
